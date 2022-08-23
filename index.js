@@ -7,12 +7,17 @@ const ulEl = document.querySelector('.todo_list');
 addButton.addEventListener('click', (e)=>{
     e.preventDefault()
     console.log(input.value);
-    if (input.value === '')return
-    createEl(input.value)
+    if (input.value === ''){
+        alert("You must write something!");
+        return
+    }else{
+    createEl(input.value)}
     input.value = ' '
 })
 
 function createEl(value){
+    // if (value === '')return
+
     const li=document.createElement('li');
     const deleteBtn=document.createElement('button');
 
