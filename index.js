@@ -8,7 +8,7 @@ addButton.addEventListener('click', (e)=>{
     e.preventDefault()
     console.log(input.value);
     if (input.value === ''){
-        alert("You must write something!");
+        alert("Write something!");
         return
     }else{
     createEl(input.value)}
@@ -16,8 +16,6 @@ addButton.addEventListener('click', (e)=>{
 })
 
 function createEl(value){
-    // if (value === '')return
-
     const li=document.createElement('li');
     const deleteBtn=document.createElement('button');
 
